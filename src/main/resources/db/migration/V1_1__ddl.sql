@@ -1,3 +1,4 @@
+-- 用户表
 CREATE TABLE t_user(
   user_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT '用户id' ,
   user_name VARCHAR(255) NOT NULL COMMENT '用户名' ,
