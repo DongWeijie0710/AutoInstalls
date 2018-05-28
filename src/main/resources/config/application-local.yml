@@ -32,6 +32,13 @@ spring:
       port: 6379
       database: 0
       timeToLive: 1
+    rabbitmq:
+      host: 127.0.0.1
+      port: 5672
+      username: guest
+      password: guest
+
+
 
 flyway:
     setBaselineOnMigrate: true
