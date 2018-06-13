@@ -43,6 +43,11 @@ spring:
 flyway:
     setBaselineOnMigrate: true
 
+jackson:
+   name: YiYangQianXi
+   song: unpreticalble
+   color: red
+
 
 
 

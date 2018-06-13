@@ -1,8 +1,6 @@
 package com.land.mine.fight.rabbitmq;
 
 import org.springframework.amqp.core.AmqpTemplate;
-import org.springframework.amqp.rabbit.annotation.RabbitHandler;
-import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -27,5 +25,4 @@ public class HelloSender {
         System.out.println("Sender : " + context);
         this.rabbitTemplate.convertAndSend("hello", context);
     }
-
 }

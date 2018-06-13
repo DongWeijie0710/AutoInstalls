@@ -16,7 +16,7 @@ import org.springframework.stereotype.Service;
 
 @Component
 @Service
-public class RabbitMqHelloTest implements ApplicationRunner {
+public class HelloTest implements ApplicationRunner {
 
     @Autowired
     private HelloSender helloSender;
