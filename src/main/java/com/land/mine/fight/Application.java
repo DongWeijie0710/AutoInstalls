@@ -15,6 +15,7 @@ public class Application {
 
     public static void main(String[] args) {
 
+//        System.out.print("当前运行线程："+Thread.currentThread().getName());
         SpringApplication.run(Application.class, args);
 
     }

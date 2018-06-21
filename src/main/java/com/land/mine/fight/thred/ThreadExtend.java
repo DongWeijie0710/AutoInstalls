@@ -9,21 +9,27 @@ package com.land.mine.fight.thred;
  */
 public class ThreadExtend extends Thread {
 
+    private int count = 5;
+
     private String name;
 
-    ThreadExtend(String name) {
-        this.name = name;
+    public ThreadExtend(String name) {
+        super();
+        this.setName(name);
     }
 
     public void run() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println(name + "运行  :  " + i);
+        super.run();
+//        while (count > 0) {
+            count--;
             try {
-                sleep((int) Math.random() * 10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+                sleep(1000);
+            }catch (Exception e){
+
             }
-        }
+            System.out.println("由" + this.currentThread().getName() + "计算，count=" + count);
+//        }
+
 
     }
 
@@ -31,8 +37,10 @@ public class ThreadExtend extends Thread {
     public static void main(String[] args) {
         ThreadExtend mTh1 = new ThreadExtend("A");
         ThreadExtend mTh2 = new ThreadExtend("B");
+        ThreadExtend mTh3 = new ThreadExtend("C");
         mTh1.start();
         mTh2.start();
+        mTh3.start();
 
     }
 }
