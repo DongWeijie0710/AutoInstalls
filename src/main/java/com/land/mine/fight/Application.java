@@ -1,6 +1,6 @@
 package com.land.mine.fight;
 
-import com.land.mine.fight.thred.ThreadExtend;
+import com.sun.xml.internal.xsom.impl.Ref;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,9 +15,9 @@ public class Application {
 
     public static void main(String[] args) {
 
-//        System.out.print("当前运行线程："+Thread.currentThread().getName());
+
         SpringApplication.run(Application.class, args);
 
-    }
+}
 
 }

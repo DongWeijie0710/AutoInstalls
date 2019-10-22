@@ -1,4 +1,4 @@
-package com.land.mine.fight.thred;
+package com.land.mine.fight.thread;
 
 /**
  * @task: 测试停止线程方法

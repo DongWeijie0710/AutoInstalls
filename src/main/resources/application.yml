@@ -9,5 +9,11 @@ server:
     clientAuth: want
     protocol: TLS
     enabled: false
+logging:
+  level:
+    root: INFO
+    com.zhongan: DEBUG
+    org.mybatis: INFO
+    org.apache.http: INFO
 
 
